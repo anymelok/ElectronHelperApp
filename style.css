@@ -1,0 +1,49 @@
+html {
+    -webkit-app-region: drag;
+    user-select: none;
+    background: transparent;
+}
+
+body {
+    -webkit-app-region: drag;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 100px;
+    padding: 16px;
+    border-radius: 10px;
+    color: #ffffffd2;
+    background: linear-gradient(to right, #52525233 50%, #0f0f0f40 50%);
+    background-size: 200px;  
+    background-position-x: -100px;
+    border: none;
+    margin: 3px;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-color: #31313133; 
+}
+
+.button:active {
+    background-color: #52525233; 
+}
